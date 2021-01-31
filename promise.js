@@ -1,6 +1,6 @@
 const hasmeeting = false;
 const meeting = new Promise((resolve,reject) => {
-    if(!hasmeeting){
+    if(hasmeeting){
        const meetingDetails = {
             name:"saad",
             value:"710",
@@ -17,5 +17,5 @@ meeting
     console.log(JSON.stringify(res))
 })
 .catch((err) => {
-    console.log(err)
+    console.log(err.message)
 })
